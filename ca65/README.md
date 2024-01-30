@@ -1,17 +1,3 @@
-# CA65 port of Bob Applegate's xKIM
-
-Ported files under the "ca65" folder, original sources under the "orig" folder.
-
-Changelog:
-
-30/01/2024
-
-* Generate a v0.0 release with the original sources
-* Initial ca65 port and release v1.0. This generates identical binaries to the original
-* Create a Makefile that builds the ROM and RAM versions of the monitor and the sample extension
-
-Original README.md follows.
-
 # xKIM
 
 xKIM is an extended monitor for KIM computer systems.  Commonly used in Corsham Technologies KIM-1 add-on boards.
