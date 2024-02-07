@@ -22,13 +22,13 @@ xKIM-ram.o: xKIM.s diskfunc.s pario.s parproto.inc
 samplext.hex: samplext-0.bin samplext-1.bin
 	srec_cat samplext-0.bin -binary -offset 0x0400 samplext-1.bin -binary -offset 0xDFFC -o $@ -Intel -address_length=2
 
-samplext-0.bin samplex-1.bin: samplext.o samplext.cfg
+samplext-0.bin samplext-1.bin: samplext.o samplext.cfg
 	ld65 -C samplext.cfg -vm -m samplext.map samplext.o
 
 samplext-ram.hex: samplext-ram-0.bin samplext-ram-1.bin
 	srec_cat samplext-ram-0.bin -binary -offset 0x0400 samplext-ram-1.bin -binary -offset 0xAFFC -o $@ -Intel -address_length=2
 
-samplext-ram-0.bin samplex-ram-1.bin: samplext.o samplext-ram.cfg
+samplext-ram-0.bin samplext-ram-1.bin: samplext.o samplext-ram.cfg
 	ld65 -C samplext-ram.cfg -vm -m samplext-ram.map samplext.o
 
 samplext.o: samplext.s xkim.inc
