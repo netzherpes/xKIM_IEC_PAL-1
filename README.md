@@ -1,8 +1,11 @@
 # CA65 port of Bob Applegate's xKIM
 
+Memory map changed to fit with the PAL-1 computer
+
 Ported files under the "ca65" folder, original sources under the "orig" folder.
 
 Changelog:
+
 
 30/01/2024
 
